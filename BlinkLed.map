@@ -1,25 +1,25 @@
 MPLINK 4.33, Linker
-Linker Map File - Created Fri Feb 17 12:26:07 2023
+Linker Map File - Created Fri Feb 17 14:19:52 2023
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x00002a    program   0x000002
-             .code_main.o       code   0x00002c    program   0x0000c4
-               _cinit_scn       code   0x0000f0    program   0x00009e
-             D10KTCYXCODE       code   0x00018e    program   0x00002e
-             _startup_scn       code   0x0001bc    program   0x00001c
-             D100TCYXCODE       code   0x0001d8    program   0x00001c
-                    .code       code   0x0001f4    program   0x00000e
-           .code___init.o       code   0x000202    program   0x000002
-        .romdata___init.o    romdata   0x000204    program   0x000000
-        .idata___init.o_i    romdata   0x000204    program   0x000000
-          .romdata_main.o    romdata   0x000204    program   0x000000
-          .idata_main.o_i    romdata   0x000204    program   0x000000
-            .code_c018i.o       code   0x000204    program   0x000000
-         .romdata_c018i.o    romdata   0x000204    program   0x000000
-         .idata_c018i.o_i    romdata   0x000204    program   0x000000
+             .code_main.o       code   0x00002c    program   0x00010a
+               _cinit_scn       code   0x000136    program   0x00009e
+             D10KTCYXCODE       code   0x0001d4    program   0x00002e
+             _startup_scn       code   0x000202    program   0x00001c
+             D100TCYXCODE       code   0x00021e    program   0x00001c
+                    .code       code   0x00023a    program   0x00000e
+           .code___init.o       code   0x000248    program   0x000002
+        .romdata___init.o    romdata   0x00024a    program   0x000000
+        .idata___init.o_i    romdata   0x00024a    program   0x000000
+          .romdata_main.o    romdata   0x00024a    program   0x000000
+          .idata_main.o_i    romdata   0x00024a    program   0x000000
+            .code_c018i.o       code   0x00024a    program   0x000000
+         .romdata_c018i.o    romdata   0x00024a    program   0x000000
+         .idata_c018i.o_i    romdata   0x00024a    program   0x000000
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
     .config_300006_main.o    romdata   0x300006    program   0x000001
@@ -42,11 +42,11 @@ Linker Map File - Created Fri Feb 17 12:26:07 2023
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000005      
-                            0x00002a    0x000203      
+                            0x00002a    0x000249      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300006    0x300006      
-            483 out of 33048 program addresses used, program memory utilization is 1%
+            553 out of 33048 program addresses used, program memory utilization is 1%
 
 
 
@@ -54,38 +54,38 @@ Linker Map File - Created Fri Feb 17 12:26:07 2023
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
                  Blinking   0x00002c    program     extern E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
-                   D100_1   0x0001e6    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-                    D100x   0x0001e4    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-                   D10K_1   0x00019a    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x0001a6    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x000198    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                   D100_1   0x00022c    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                    D100x   0x00022a    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                   D10K_1   0x0001e0    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x0001ec    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0001de    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
             DebounceDelay   0x000060    program     extern E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
-             Delay100TCYx   0x0001d8    program     extern C:\MCC18\src\traditional\delays\d100tcyx.asm
-             Delay10KTCYx   0x00018e    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D100TCYXCODE_0008   0x0001e0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0012   0x0001ea    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0018   0x0001f0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-       _D10KTCYXCODE_0010   0x00019e    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x0001aa    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+             Delay100TCYx   0x00021e    program     extern C:\MCC18\src\traditional\delays\d100tcyx.asm
+             Delay10KTCYx   0x0001d4    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D100TCYXCODE_0008   0x000226    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x000230    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x000236    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D10KTCYXCODE_0010   0x0001e4    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x0001f0    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x0001d6    program     static                          
-       ___return_lbl00002   0x00018c    program     static                          
+       ___return_lbl00001   0x00021c    program     static                          
+       ___return_lbl00002   0x0001d2    program     static                          
                __config_0   0x300001    program     static E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
                __config_1   0x300003    program     static E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
                __config_2   0x300006    program     static E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
-                   __init   0x000202    program     extern C:\MCC18\src\traditional\stdclib\__init.c
-            __zero_memory   0x0001f4    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
-                _do_cinit   0x0000f0    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   __init   0x000248    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+            __zero_memory   0x00023a    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                _do_cinit   0x000136    program     extern C:\MCC18\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                 _startup   0x0001bc    program     extern C:\MCC18\src\traditional\startup\c018i.c
-               clear_loop   0x0001fa    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
-                copy_loop   0x000162    program     static                          
-            copy_one_byte   0x000168    program     static                          
-                     done   0x00018c    program     static                          
-             done_copying   0x000176    program     static                          
-                     loop   0x0001cc    program     static                          
+                 _startup   0x000202    program     extern C:\MCC18\src\traditional\startup\c018i.c
+               clear_loop   0x000240    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                copy_loop   0x0001a8    program     static                          
+            copy_one_byte   0x0001ae    program     static                          
+                     done   0x0001d2    program     static                          
+             done_copying   0x0001bc    program     static                          
+                     loop   0x000212    program     static                          
                      main   0x00006c    program     extern E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
-                     test   0x00010a    program     static                          
+                     test   0x000150    program     static                          
                    ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
@@ -291,31 +291,31 @@ Linker Map File - Created Fri Feb 17 12:26:07 2023
                  Blinking   0x00002c    program     extern E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
             DebounceDelay   0x000060    program     extern E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
                      main   0x00006c    program     extern E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
-                _do_cinit   0x0000f0    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                     test   0x00010a    program     static                          
-                copy_loop   0x000162    program     static                          
-            copy_one_byte   0x000168    program     static                          
-             done_copying   0x000176    program     static                          
-       ___return_lbl00002   0x00018c    program     static                          
-                     done   0x00018c    program     static                          
-             Delay10KTCYx   0x00018e    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x000198    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x00019a    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x00019e    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x0001a6    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x0001aa    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
-                 _startup   0x0001bc    program     extern C:\MCC18\src\traditional\startup\c018i.c
-                     loop   0x0001cc    program     static                          
-       ___return_lbl00001   0x0001d6    program     static                          
-             Delay100TCYx   0x0001d8    program     extern C:\MCC18\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0008   0x0001e0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-                    D100x   0x0001e4    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-                   D100_1   0x0001e6    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0012   0x0001ea    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0018   0x0001f0    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
-            __zero_memory   0x0001f4    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
-               clear_loop   0x0001fa    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
-                   __init   0x000202    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+                _do_cinit   0x000136    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x000150    program     static                          
+                copy_loop   0x0001a8    program     static                          
+            copy_one_byte   0x0001ae    program     static                          
+             done_copying   0x0001bc    program     static                          
+       ___return_lbl00002   0x0001d2    program     static                          
+                     done   0x0001d2    program     static                          
+             Delay10KTCYx   0x0001d4    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x0001de    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x0001e0    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x0001e4    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x0001ec    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x0001f0    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                 _startup   0x000202    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x000212    program     static                          
+       ___return_lbl00001   0x00021c    program     static                          
+             Delay100TCYx   0x00021e    program     extern C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0008   0x000226    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                    D100x   0x00022a    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+                   D100_1   0x00022c    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x000230    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x000236    program     static C:\MCC18\src\traditional\delays\d100tcyx.asm
+            __zero_memory   0x00023a    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               clear_loop   0x000240    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                   __init   0x000248    program     extern C:\MCC18\src\traditional\stdclib\__init.c
                __config_0   0x300001    program     static E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
                __config_1   0x300003    program     static E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
                __config_2   0x300006    program     static E:\WorkMplabProjects\NewTeamMembers\BlinikLed\main.c
