@@ -26,7 +26,7 @@ void Blinking (unsigned char Speed)
 
 void DebounceDelay (void)
 {
-	Delay10KTCYx (50); 
+	Delay10KTCYx (10); 
 } 
 
 void main (void)
@@ -46,7 +46,7 @@ void main (void)
 			
 			Count += 1; 
 			
-			if (Count > 10)
+			if (Count > 5)
 				Count = 1; 
 		}
 		
@@ -70,26 +70,6 @@ void main (void)
 			
 			case 5: 
 				Blinking (5); 
-			break; 
-			
-			case 6: 
-				Blinking (6); 
-			break;
-			
-			case 7: 
-				Blinking (7); 
-			break;
-			
-			case 8: 
-				Blinking (8); 
-			break;
-			
-			case 9: 
-				Blinking (9); 
-			break;
-			
-			case 10: 
-				Blinking (10); 
 			break; 
 			
 			default: 
