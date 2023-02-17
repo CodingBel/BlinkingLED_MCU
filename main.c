@@ -18,10 +18,10 @@ void DebounceDelay (void);
 void Blinking (unsigned char Speed)
 {
 	LATCbits.LATC0 	 = 1;		// Turn on LED for a while 
-	Delay100TCYx(Speed * 100);
+	Delay100TCYx(Speed * 10);
 	
 	LATCbits.LATC0 	 = 0;		// Turn on LED for a while 
-	Delay100TCYx(Speed * 100);
+	Delay100TCYx(Speed * 10);
 } 
 
 void DebounceDelay (void)
@@ -46,7 +46,7 @@ void main (void)
 			
 			Count += 1; 
 			
-			if (Count > 5)
+			if (Count > 10)
 				Count = 1; 
 		}
 		
@@ -70,6 +70,26 @@ void main (void)
 			
 			case 5: 
 				Blinking (5); 
+			break; 
+			
+			case 6: 
+				Blinking (6); 
+			break;
+			
+			case 7: 
+				Blinking (7); 
+			break;
+			
+			case 8: 
+				Blinking (8); 
+			break;
+			
+			case 9: 
+				Blinking (9); 
+			break;
+			
+			case 10: 
+				Blinking (10); 
 			break; 
 			
 			default: 
