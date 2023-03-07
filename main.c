@@ -26,7 +26,7 @@ void Blinking (unsigned char Speed)
 
 void DebounceDelay (void)
 {
-	Delay10KTCYx (10); 
+	Delay10KTCYx (30); 
 } 
 
 void main (void)
